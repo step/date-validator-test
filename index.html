@@ -3,22 +3,30 @@
   <head>
     <title>Date Validator</title>
     <script src="/date-validator-test/validator.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Date Validator</h1>
-    <form id="dateForm">
-      <label for="date">Date:</label>
-      <input type="text" id="date" name="date" required />
-      <br />
-      <label for="format">Format:</label>
-      <select id="format" name="format">
-        <option value="YYYY-MM-DD">YYYY-MM-DD</option>
-        <option value="DD-MM-YYYY">DD-MM-YYYY</option>
-        <option value="MM-DD-YYYY">MM-DD-YYYY</option>
-      </select>
-      <br />
-      <button type="submit">Validate</button>
-    </form>
-    <p id="result"></p>
-  </body>
+  <body class="bg-gray-100">
+    <div class="w-1/2 mx-auto p-4">
+      <h1 class="text-3xl font-bold text-center mb-4">Date Validator</h1>
+      <form id="dateForm" class="bg-white rounded-lg p-4">
+        <div class="mb-4">
+          <label for="date" class="block text-gray-700 font-bold mb-2">Date:</label>
+          <input type="text" id="date" name="date" class="w-full px-3 py-2 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label for="format" class="block text-gray-700 font-bold mb-2">Format:</label>
+          <select id="format" name="format" class="w-full px-3 py-2 border rounded-lg">
+            <option value="YYYY-MM-DD">YYYY-MM-DD</option>
+            <option value="DD-MM-YYYY">DD-MM-YYYY</option>
+            <option value="MM-DD-YYYY">MM-DD-YYYY</option>
+          </select>
+  
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Validate</button>
+  
+        </div>
+        <p id="result" class="text-center mt-4"></p>
+      </form>
+    </div>
 </html>
