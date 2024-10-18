@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Date Validator</title>
+    <script src="/validator.js"></script>
+  </head>
+  <body>
+    <h1>Date Validator</h1>
+    <form id="dateForm">
+      <label for="date">Date:</label>
+      <input type="text" id="date" name="date" required />
+      <br />
+      <label for="format">Format:</label>
+      <select id="format" name="format">
+        <option value="YYYY-MM-DD">YYYY-MM-DD</option>
+        <option value="DD-MM-YYYY">DD-MM-YYYY</option>
+        <option value="MM-DD-YYYY">MM-DD-YYYY</option>
+      </select>
+      <br />
+      <button type="submit">Validate</button>
+    </form>
+    <p id="result"></p>
+  </body>
+</html>
